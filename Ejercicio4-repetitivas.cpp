@@ -8,21 +8,21 @@ desea continuar ingresando gastos, y mostrara al final la suma de los N gastos.
 using namespace std; 
 int main(){
 	
-	int sg, gasto; 
-	char opc; 
+	int sumatoria_gastos, gasto; 
+	char opcion; 
 	
-	sg=0; 
+	sumatoria_gastos=0; 
 	
 	do{
 		cout<<"Ingrese el gasto: "; cin>>gasto; 
 		
-		sg=sg+gasto; 
+		sumatoria_gastos=sumatoria_gastos+gasto; 
 		
-		cout<<"Desea seguir ingresando gastos? (Si: 's'  y   No: 'n'): "; cin>>opc; 
+		cout<<"Desea seguir ingresando gastos? (Si: 's'  y   No: 'n'): "; cin>>opcion; 
 		
-	}while(opc =='s' || opc == 'S');
+	}while(opcion =='s' || opcion == 'S');
 	
-	cout<<"\nEl gasto total es: "<<sg; 
+	cout<<"\nEl gasto total es: "<<sumatoria_gastos; 
 	
 	return 0; 
 }
