@@ -8,23 +8,22 @@ positivos menores o iguales a n. Por ejemplo: 5! = 5 × 4 × 3 × 2 × 1 = 120.
 using namespace std; 
 int main(){
 	
-	int n, i, factorial;  
+	int numero, i, factorial=1;  
 	
-	cout<<"Ingrese un numero: "; cin>>n; 
+	cout<<"Ingrese un numero: "; cin>>numero; 
+	 
 	
-	factorial=1; 
-	
-	if(n<0){
+	if(numero<0){
 		cout<<"Debe ingresar solo numeros positivos."<<endl; 
 	}
 	else{
-	for(i=1; i<=n; i=i+1){
+	for(i=1; i<=numero; i=i+1){
 		
 		factorial=factorial*i; 
 	}
 	}
 														
-	cout<<"El factorial del numero que ingreso es: "<<factorial; 
+	cout<<endl<<"El factorial del numero que ingreso es: "<<factorial<<endl; 
 		
 	return 0; 
 }
