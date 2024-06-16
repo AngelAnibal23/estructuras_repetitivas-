@@ -21,13 +21,13 @@ int main(){
             
             if(numero%2==0){ 
             sp=sp+numero;   
-            cp=cp+1;
+            cp++;
             }
             else{
             si=si+numero;
-            ci=ci+1;
+            ci++;
             }
-            i=i+1;
+            i++;
         }
         
        if(ci>0){
@@ -43,7 +43,7 @@ int main(){
              pp=0; 
         }
               
-        cout<<"\nEl promedio de pares es: "<<pp<<endl;
+        cout<<"\nPromedio pares: "<<pp<<endl;
         cout<<"\nPromedio impares: "<<pi<<endl;
               
               
