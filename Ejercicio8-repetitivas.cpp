@@ -26,12 +26,12 @@ int main(){
 		
 		mayor=numero; 
 		
-		i=i+1;
+		i++;
 		}
 		
 	}
 	
-	cout<<"El numero mayor de todos los ingresados es: "<<mayor<<endl; 
+	cout<<endl<<"El numero mayor de todos los ingresados es: "<<mayor<<endl; 
 	
 	
 	return 0; 
