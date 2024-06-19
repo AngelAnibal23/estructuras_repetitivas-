@@ -19,6 +19,11 @@ int main(){
 	 
 	
 		cout<<"Digite la nota aprobatoria: ";  cin>>na; 
+		
+		if(na<0){
+			cout<<"La nota no puede ser negativa. "; 
+			return 1; 
+		}
 
 	do{
 	
