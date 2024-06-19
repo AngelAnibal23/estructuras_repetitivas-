@@ -6,11 +6,26 @@ ingresando notas, y mostrará al final la cantidad de aprobados y desaprobados y 
 */
 #include<iostream>
 using namespace std; 
+
+int promediosalon(float x, float y){
+	int promefunc; 
+	
+	if(y>0){
+		promefunc=x/y; 
+	}
+	else{
+		promefunc=0; 
+	}
+	
+	return promefunc; 
+}
+
+
 int main(){
 	
-	int ni, sn, ca, cd, nota; 
-	char opc; 
-	double prom, na; 
+	int    ni, sn, ca, cd, nota; 
+	char   opc; 
+	double na, promedio; 
 	
 	sn=0;  
 	ni=0; 
@@ -21,7 +36,7 @@ int main(){
 		cout<<"Digite la nota aprobatoria: ";  cin>>na; 
 		
 		if(na<0){
-			cout<<"La nota no puede ser negativa. "; 
+			cout<<endl<<"La nota no puede ser negativa. "; 
 			return 1; 
 		}
 
@@ -43,16 +58,12 @@ int main(){
 		
 	}while(opc=='s' || opc=='S');
 	
-	if(ni>0){
-		prom=sn/ni;
-	}
-	else{
-		prom=0; 
-	}
+	
+	promedio = promediosalon(sn,ni); 
 	
 	cout<<"\nLa cantidad de estudiantes aprobados es: "<<ca<<endl; 
 	cout<<"\nLa cantidad de estudiantes desaprobados es: "<<cd<<endl; 
-	cout<<"\nEl promedio de notas de el salon es: "<<prom<<endl; 
+	cout<<"\nEl promedio de notas de el salon es: "<<promedio<<endl; 
 	
 	return 0; 
 }
